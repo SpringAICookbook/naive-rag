@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: naive-rag
+  threads:
+    virtual:
+      enabled: true
+  ai:
+    ollama:
+      chat:
+        enabled: true
+        options:
+          model: "phi3"
+          temperature: 0.2
+      embedding:
+        options:
+          model: "phi3"
